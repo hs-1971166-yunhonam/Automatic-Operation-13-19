@@ -58,7 +58,7 @@
 
 - 설명:
 
-5. DBSE-monitor
+5. **DBSE-monitor-최유진**
 
 - 설명:
 - DBSE-monitor는 운전 중에 졸려서 졸음운전을 하거나 딴짓을 할때 경고해주는 시스템이다. 
