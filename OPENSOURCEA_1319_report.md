@@ -69,9 +69,11 @@
 - altaga/DBSE-monitor(https://github.com/altaga/DBSE-monitor)
 - 이 오픈소스에서 사용되는 라이선스는 MIT License이다.
 
-6. <소프트웨어 이름>
+6. **PACmod3 - 남동진**
 
-- 설명:
+- 설명: 자동차를 운행하기 위해서는 핸들을 돌리거나, 페달을 밟는 **유압 신호**를 이용하여 자동차를 제어해야 한다. 그러나 자율주행차의 운행을 위해서는 유압신호대신 **전기신호**를 통해 자동차를 이동시켜야한다. 이를 **drive-by-wire**라고 하는데, PACmod3는 이를 구현한 것이다. PACmod3는 로봇운영체제인 **ROS**로 drive-by-wire를 구현한다.
+- 라이센스 : **MIT license**
+- 주소: https://github.com/astuff/pacmod3
 
 7. <소프트웨어 이름>
 
