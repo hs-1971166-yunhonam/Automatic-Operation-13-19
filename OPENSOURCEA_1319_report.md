@@ -18,10 +18,38 @@
 
 ## Open Source
 
-1. **차선 감지 오픈소스 - 최제인**
+1. **차선 감지 오픈소스(Lanenet lane detection) - 최제인**
 
-- 설명: tensorflow를 사용하여 IEEE IV 회의 논문 "Towards End-to-End Lane Detection: an Instance Segmentation Approach"를 기반으로 실시간 차선 감지를 위한 심층 신경망을 구현 (https://github.com/MaybeShewill-CV/lanenet-lane-detection)
-  \*license : **Apache License Version 2.0**, January 2004 (http://www.apache.org/licenses/)
+- 설명
+
+  - tensorflow를 사용하여 IEEE IV 회의 논문 "Towards End-to-End Lane Detection: an Instance Segmentation Approach"를 기반으로 실시간 차선 감지를 위한 심층 신경망을 구현한 오픈소스이다.
+
+  - 가변적인 차선을 처리하고 차선 변경에 대처할 수 있는 실시간 차선 감지 알고리즘이다. 
+
+  - 50fps로 실행되기 때문에 기존의 차선 감지 알고리즘보다 빠른 편에 속한다. 
+
+  - 최근의 접근 방식은 미리 정의된 고정 된 수의 Ego lane을 감지하는 데 제한되고 차선 변경에 대처할 수 없다.  그러므로 앞서 언급 한 한계를 넘어서 각 레인이 자체 인스턴스를 형성하는 인스턴스 분할로 레인 감지 문제를 처리 한다. 
+
+  - 차선을 맞추기 전에 분할 된 차선 인스턴스를 매개 변수해야 한다. 이를 위해 고정 된 "버드아이 뷰" 변환과 달리 이미지에 조건을 둔 학습된 원근 변환을 적용 한다. 이를 통해 도로 평면 변경에 대해 강력한 차선 피팅을 보장한다.
+
+    
+
+- 역할 : 인지
+
+  - 첫번째 단계에서 차선 변경을 처리하고 임의의 수의 차선을 추론할 수 있는 차선 감지 문제를 인스턴스 분할 작업으로 캐스팅한다. 
+  - 두번째 단계에서 입력 이미지를 받은 네트워크는 도로 평면 변화 (예 : 오르막 / 내리막 경사)에 대해 견고한 차선 맞춤을 허용하는 원근 변환의 매개 변수를 추정한다.
+  - 위 두 단계를 통해서 차선 위치가 가장자리인지 아닌지를 분류하고 차선을 인지한다. 
+
+  
+
+- 라이선스
+
+  - Apache License Version 2.0
+
+  - [라이선스 고지 사항](https://github.com/MaybeShewill-CV/lanenet-lane-detection/blob/master/LICENSE) 
+
+    
+
 
 2. **장애물 인지 모듈(apollo) - 최재완**
 
