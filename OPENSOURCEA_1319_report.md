@@ -75,15 +75,11 @@
 - 라이센스 : **MIT license**
 - 주소: https://github.com/astuff/pacmod3
 
-7. **딥러닝 기반 자율주행 시뮬레이션 기술-남궁민**
+7. **적응식 정속주행 시스템(comma.ai openpilot) - 남궁민**
 
-- 설명: 자율주행 시험은 단순히 자율주행차의 안전성만을 보증하기 위한 것이 아니다. 안전성 확보는 기본이고, 자율주행 수준을 높이는 데에도 크게 기여를 한다.
-자율주행 시스템은 기계학습 알고리즘을 기반으로 동작한다. 따라서 자율주행 시스템은 도로 주행을 통해 데이터를 계속 모으고 이를 학습하면서 자동차가 스스로 주행할 수 있게 한다.
-**자율주행 시뮬레이터**는 가상공간에서 자율주행차의 주행 시험을 할 수 있게 제공하는 플랫폼이다.
-가상공간이기 때문에 현실의 어떠한 제약이 없다. 자동차 대수를 현실보다 훨씬 더 자유롭게 늘릴 수 있다.
-유다시티의 시뮬레이터는 유니티 기반으로 만들어졌으며, 이 소스코드를 활용하면 기존에 존재하던 장소 이미지를 활용하여 나만의 가상 테스팅 환경을 구축할 수 있다.
+- 설명: 오픈파일럿은 콤마에이아이의 인공신경망 기반 ADAS 소프트웨어이다. 오픈 파일럿의 기능은 ACC(Adaptive Cruise Control), ALC(Automated Lane Centering), FCW(Forward Collision Warning), LDW(Lane Departure Warning) 및 DM(Driver Monitoring) 기능을 수행한다. 그 중 **ACC(Adaptive Cruise Control)**기능은 적응식 정속 주행 시스템으로 센서를 이용해 전방을 주행하는 자동차와 그 자동차의 주행 속도를 감지한다. 주행 모드로는 선행 주행모드(clear driving mode)와 추종 주행모드(following driving mode) 이 두가지 모드로 주행한다.
 - 라이센스: **MIT License**
-- https://github.com/udacity/self-driving-car-sim
+- https://github.com/commaai/openpilot
 
 8. **객체 감지 알고리즘 모델(YOLO)-최영서**
 
