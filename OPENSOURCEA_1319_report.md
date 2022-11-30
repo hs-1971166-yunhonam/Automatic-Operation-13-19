@@ -112,11 +112,24 @@
   - **MIT license**
   - [라이선스 고지사항](https://github.com/astuff/pacmod3/blob/ros1_master/LICENSE)
 
-7. **적응식 정속주행 시스템(comma.ai openpilot) - 남궁민**
+7. **적응식 정속주행 시스템(Openpilot) - 남궁민**
 
-- 설명: 오픈파일럿은 콤마에이아이의 인공신경망 기반 ADAS 소프트웨어이다. 오픈 파일럿의 기능은 ACC(Adaptive Cruise Control), ALC(Automated Lane Centering), FCW(Forward Collision Warning), LDW(Lane Departure Warning) 및 DM(Driver Monitoring) 기능을 수행한다. 그 중 **ACC(Adaptive Cruise Control)**기능은 적응식 정속 주행 시스템으로 센서를 이용해 전방을 주행하는 자동차와 그 자동차의 주행 속도를 감지한다. 주행 모드로는 선행 주행모드(clear driving mode)와 추종 주행모드(following driving mode) 이 두가지 모드로 주행한다.
-- 라이센스: **MIT License**
-- https://github.com/commaai/openpilot
+- 설명
+
+ - OpenPilot은 콤마에이아이의 인공신경망 기반 ADAS 소프트웨어이다.
+ - OpenPilot 전용 운영체제OS가 설치된 스마트폰 등을 이용해 전방을 주행하는 자동차와 그 자동차의 주행 속도를 감지한다. 
+ - 하드웨어 장치(레이더 정보 전송, 가감속 제어 장치)를 이용해 주행하고 있는 전방의 차량과 뒤따라 주행하는 차량이 적정 거리를 유지하며 주행하도록 돕는다.
+ - OpenPilot은 차량의 CAN 네트워크에 연결하여 작동한다.
+
+- 역할 : 판단
+
+ - OpenPilot은 주행속도 및 차간거리를 판단하여 경로에 따른 주행정보와 차체 제어 정보를 받아 도착지까지 주행하는 역할을 한다.
+ - 도로 상황을 이해하고 주행장소를 예측하는 뉴럴 네트워크가 포함되어 차선이 희미해진 지역이나 다른 국가를 주행하는 등의 상황에서도 문제 없이 판단 및 주행이 가능하다.
+
+- 라이선스
+
+ - MIT License
+ - [라이선스 고지사항](https://github.com/commaai/openpilot/blob/master/LICENSE)
 
 8. **객체 감지 알고리즘 모델(YOLO)-최영서**
 
