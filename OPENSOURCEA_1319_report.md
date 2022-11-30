@@ -95,11 +95,22 @@
 - altaga/DBSE-monitor(https://github.com/altaga/DBSE-monitor)
 - 이 오픈소스에서 사용되는 라이선스는 MIT License이다.
 
-6. **PACmod3 - 남동진**
+6. **자동차 물리제어 모듈(PACmod3) - 남동진**
 
-- 설명: 자동차를 운행하기 위해서는 핸들을 돌리거나, 페달을 밟는 **유압 신호**를 이용하여 자동차를 제어해야 한다. 그러나 자율주행차의 운행을 위해서는 유압신호대신 **전기신호**를 통해 자동차를 이동시켜야한다. 이를 **drive-by-wire**라고 하는데, PACmod3는 이를 구현한 것이다. PACmod3는 로봇운영체제인 **ROS**로 drive-by-wire를 구현한다.
-- 라이센스 : **MIT license**
-- 주소: https://github.com/astuff/pacmod3
+- 설명
+
+  - 전통적인 자동차는 페달, 핸들 등의 유압장치를 토대로 운행한다. 자율주행을 실현하기 위해서는 유압장치가 아닌, 전기 장치를 통해 자동차를 운행 할 수 있어야한다.이것을 drive-by-wire 기술이라고 한다.PACmod3는 이를 drive-by-wire를 실현시키는 오픈소스이다.
+  - PACmod3는 자동차의 각 하드웨어 제어를 위한 함수들로 이루어져있다. 예시로 브레이크의 작동을 원한다면, brake_motor_rpt_1, brake_motor_rpt_2 등의 함수가 실행되며, 엑셀의 작동을 원한다면 steering_motor_rpt_1, steering_motor_rpt_2 등의 함수가 실행된다. 함수는 엑셀, 브레이크 뿐아니라 문, 와이퍼, 크락션 등 자동차 하드웨어 대부분에 걸쳐 존재한다. 이를 통해 자율주행을 위한 모든 하드웨어를 제어 할 수 있다.
+
+- 역할 : 제어
+
+  - PACmod3는 제어를 위한 모듈이다. DBSE, Aslan 등 인지 모듈을 통해 현재 자동차를 급속으로 정지시켜야 할 비상상황인 경우, 그것에 대한 정보를 받고 수행하는 것이 그 역할이다.
+  - 전기 신호를 이용하여 하드웨어에 명령을 내리므로, 전통적인 유압장치를 통한 제어보다 빠르게 자동차를 제어할 수 있다.
+
+- 라이선스
+
+  - **MIT license**
+  - [라이선스 고지사항](https://github.com/astuff/pacmod3/blob/ros1_master/LICENSE)
 
 7. **적응식 정속주행 시스템(comma.ai openpilot) - 남궁민**
 
