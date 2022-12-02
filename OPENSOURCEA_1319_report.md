@@ -2,7 +2,7 @@
 
 ---
 
-주제 : 자율주행
+주제 : 자율주행 <br>
 팀원 : 김현종, 남궁민, 남동진, 남윤호, 최영서, 최유진, 최재완, 최제인
 <br><br>
 
@@ -288,7 +288,7 @@
 
 <br>
 
-- GPL 3.0 라이선스는 Apache 2.0과 MIT 라이선스와 충돌하지 않는다.
+- GPL 3.0 라이선스는 Apache 2.0과 MIT 라이선스와 충돌하지 않는다. <br>
   참고 : https://www.osadl.org/fileadmin/checklists/unreflicenses/GPL-3.0-only.txt
   <br>
 
